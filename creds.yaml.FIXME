@@ -1,0 +1,5 @@
+# needs real entries to work
+user: USERNAME
+password: PASSWORD
+host: HOSTNAME
+dbname: DBNAME
