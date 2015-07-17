@@ -30,6 +30,7 @@ shinyServer(function(input, output) {
   output$text = renderText(paste0(input$gene,input$species))
   output$dataTable = DT::renderDataTable(
       gene(),
+      rownames=FALSE,
       extensions=c('FixedHeader','ColVis'),
       options = list(dom = 'C<"clear">lfrtip')
     )

@@ -14,14 +14,13 @@ shinyUI(fluidPage(
   titlePanel("Old Faithful Geyser Data"),
   
   fluidRow(
-    column(4,
+    column(3,
            selectInput('species',"species",c('Human','Mouse'))),
-    column(4,
+    column(3,
            textInput('gene','Gene:')),
-    column(2,
+    column(1,
            submitButton("Query"))
   ),
-  fluidRow(column(4,verbatimTextOutput('text'))),
   fluidRow(
     column(12,DT::dataTableOutput('dataTable'))
     )
